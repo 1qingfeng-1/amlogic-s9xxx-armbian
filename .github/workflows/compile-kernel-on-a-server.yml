@@ -13,10 +13,10 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "retro98boy/unifreq-linux-6.12.y@onethingcloud"
+        default: "retro98boy/unifreq-linux-6.12.y"
         type: choice
         options:
-          - retro98boy/unifreq-linux-6.12.y@onethingcloud
+          - retro98boy/unifreq-linux-6.12.y
           - unifreq
           - codesnas
       kernel_version:

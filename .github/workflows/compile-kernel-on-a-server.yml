@@ -140,6 +140,7 @@ jobs:
           sudo mount /dev/github/runner /builder
           sudo chown -R runner.runner /builder
           df -hT
+          ls -lh /home/runner/work/amlogic-s9xxx-armbian/amlogic-s9xxx-armbian
 
       - name: Create a mapped directory
         id: mapped
@@ -147,8 +148,8 @@ jobs:
         run: |
           df -hT ${PWD}
           mkdir -p /builder/{kernel,output}
-          ln -sf /builder/kernel /home/runner/work/_actions/ophub/amlogic-s9xxx-armbian/main/compile-kernel/kernel
-          ln -sf /builder/output /home/runner/work/_actions/ophub/amlogic-s9xxx-armbian/main/compile-kernel/output
+          ln -sf /builder/kernel /home/runner/work/amlogic-s9xxx-armbian/amlogic-s9xxx-armbian/kernel
+          ln -sf /builder/output /home/runner/work/amlogic-s9xxx-armbian/amlogic-s9xxx-armbian/compile-kernel/output
           echo "status=success" >> ${GITHUB_OUTPUT}
 
       - name: Compile the kernel [ ${{ inputs.kernel_version }} ]

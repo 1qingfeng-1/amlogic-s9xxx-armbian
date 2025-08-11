@@ -13,7 +13,7 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "retro98boy"
+        default: "retro98boy/unifreq-linux-6.12.y@onethingcloud"
         type: choice
         options:
           - unifreq

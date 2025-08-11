@@ -16,6 +16,7 @@ on:
         default: "retro98boy/unifreq-linux-6.12.y@onethingcloud"
         type: choice
         options:
+          - retro98boy/unifreq-linux-6.12.y@onethingcloud
           - unifreq
           - codesnas
       kernel_version:

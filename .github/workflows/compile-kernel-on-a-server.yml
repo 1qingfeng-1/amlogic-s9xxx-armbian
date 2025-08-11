@@ -13,10 +13,10 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "retro98boy/unifreq-linux-6.12.y"
+        default: "retro98boy/unifreq-linux-6.12.y@onethingcloud"
         type: choice
         options:
-          - retro98boy/unifreq-linux-6.12.y
+          - retro98boy/unifreq-linux-6.12.y@onethingcloud
           - unifreq
           - codesnas
       kernel_version:
@@ -40,7 +40,7 @@ on:
       kernel_auto:
         description: "Auto use the latest kernel"
         required: false
-        default: true
+        default: false
         type: boolean
       silent_log:
         description: "Use silent logging"
